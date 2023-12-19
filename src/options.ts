@@ -1,5 +1,6 @@
 export enum Context {
     Sentence = "sentence",
+    Character = "character",
     Paragraph = "paragraph",
     Section = "section",
     Chapter = "chapter",

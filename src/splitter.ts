@@ -1,3 +1,4 @@
+import { inferRegex } from "./infer";
 import { Context, SplitOptions } from "./options";
 
 export function splitter(
@@ -47,7 +48,7 @@ export function chunk(source: string, options: SplitOptions = {}) {
         delimiter = ""
     } = options;
 
-    let regex = context === Context.Sentence ? "([.!?\\n])\\s*" : "\\n{2,}";
+    let regex = inferRegex(context);
 
     // override context regex with custom delimiter
     if (delimiter) regex = delimiter;
