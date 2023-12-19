@@ -39,7 +39,7 @@ export function splitter(
     return [subChunk, restChunk, overlapText];
 }
 
-export function chunk(source: string, options: SplitOptions = {}) {
+export function chunk(source: String, options: SplitOptions = {}) {
     const {
         minLength = 0,
         maxLength = 1000,

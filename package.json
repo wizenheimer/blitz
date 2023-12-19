@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/wizenheimer/blitz/issues"
   },
-  "homepage": "https://github.com/wizenheimer/blitz#readme"
+  "homepage": "https://github.com/wizenheimer/blitz#readme",
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "vitest": "^1.0.4"
+  }
 }
